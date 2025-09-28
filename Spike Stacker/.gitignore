@@ -91,3 +91,26 @@ Packages/packages-lock.json
 !Assets/
 !ProjectSettings/
 !Packages/
+
+# Ignore all obj and bin folders anywhere in Unity project
+**/obj/
+**/bin/
+
+# Ignore Debug/Release outputs inside obj/bin
+**/obj/**/Debug/
+**/obj/**/Release/
+**/bin/**/Debug/
+**/bin/**/Release/
+
+# Ignore all .meta files inside obj/bin folders
+**/obj/**/*.meta
+**/bin/**/*.meta
+
+# Unity standard ignores
+Library/
+Temp/
+*.Generated.cs
+*.AssemblyInfo.cs
+*.GlobalUsings.g.cs
+
+
