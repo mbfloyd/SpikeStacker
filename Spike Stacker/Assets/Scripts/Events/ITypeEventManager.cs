@@ -1,8 +1,7 @@
 
 using System;
 
-namespace ALIyerEdon
-{
+
     public interface ITypeEventManager
     {
         public void RegisterListener<T>(Action<T> listener) where T : GameEvent;
@@ -10,4 +9,4 @@ namespace ALIyerEdon
         public void TriggerEvent<T>(T gameEvent) where T : GameEvent;
         
     }
-}
+

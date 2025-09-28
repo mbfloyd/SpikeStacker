@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ALIyerEdon
-{
     public class TypeEventManager : ITypeEventManager
     {
         private Dictionary<Type, Action<GameEvent>> eventDictionary = new();
@@ -56,4 +54,4 @@ namespace ALIyerEdon
             }
         }
     }
-}
+
