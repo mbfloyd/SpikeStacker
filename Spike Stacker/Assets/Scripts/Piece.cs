@@ -149,7 +149,8 @@ public class Piece : MonoBehaviour
 
     private void LockPiece()
     {
-        GridManager.Instance.SetPiece(this);
+        int points = GridManager.Instance.PlacePieceAndResolve(this, GameManager.Instance.currentCombo);
+        GameManager.Instance.AddScore(points);
         GameManager.Instance.OnPiecePlaced();
         enabled = false;
     }
