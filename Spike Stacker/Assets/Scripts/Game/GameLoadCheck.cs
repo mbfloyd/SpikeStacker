@@ -14,5 +14,6 @@ public class GameLoadCheck : MonoBehaviour
             SceneManager.LoadScene("GameLoad");
         }
         Destroy(gameObject);
+
     }
 }
